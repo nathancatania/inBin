@@ -1,11 +1,16 @@
 /*
 Ultrasonic Sensor HC-SR04
+Interacts with Sensor on RPi and obtains measurement reading.
+
 Nathan Catania
 02/04/16
 For Design 3A/Telstra University Challenge, RMIT University
 
-v0.1
-(sudo nano ultrasonic.cpp)
+v0.3
+(sudo nano ./ultrasonic.cpp)
+
+Compile using:
+sudo g++ -Wall -o ultrasonic ultrasonic.cpp -lwiringpi
 
 Interacts with HC-SR04 Ultrasonic sensor using GPIO Pins on RPi
 Sensor has 4 pins: Vcc, ECHO, TRIG, GND
