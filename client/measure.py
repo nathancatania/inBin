@@ -1,3 +1,13 @@
+# Client-side Raspberry Pi Code
+# Obtains sensor and device data + sends to server via POST.
+
+# Nathan Catania
+# For Team inBin. Telstra University Challenge 2016
+# s3477902@student.rmit.edu.au, RMIT University
+
+# v0.7
+# 09/05/16
+
 import RPi.GPIO as GPIO
 import time
 import requests
@@ -8,7 +18,7 @@ from subprocess import check_output
 # then sent data will be discarded.
 # This is a quick/dirty way to prevent unauthorised POST data
 key = "xNdp9LbK9PSUTYRFDWk2Jr"
-deviceID = "melCBD,-37.809379,144.963595"
+deviceID = "demo,0001"
 
 #### Bin Co-Ordinates ####
 # Used for Google Maps API
