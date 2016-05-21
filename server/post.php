@@ -22,12 +22,14 @@
   else {
 
     // PROCESSING SENSOR data
-    $distance = test_input($_POST["distance"]);
+    $distance = test_input($_POST["distance"]); // raw sensor measurement in mm
+    $fill = test_input($_POST["fill"]); // fill percentage (eg 65% full)
+    $capacity = test_input($_POST["capacity"]); // capacity of the bin
+    $empty = test_input($_POST["empty"]); // bool -> whether bin requires emptying or not. 1 = yes.
     $publicip = test_input($_POST["publicip"]);
     $latitude = test_input($_POST["latitude"]);
     $longitude = test_input($_POST["longitude"]);
     $keyRX = $_POST["key"];
-    // *** WARNING! deviceID is PRIMARY KEY FOR DB AND MUST BE UNIQUE! ***
     $deviceid = test_input($_POST["deviceID"]);
 
     // DEBUG STUFF
@@ -52,6 +54,9 @@
           fwrite($fh, "$publicip\n");
           fwrite($fh, "$latitude\n");
           fwrite($fh, "$longitude\n");
+          fwrite($fh, "$fill\n");
+          fwrite($fh, "$capacity\n");
+          fwrite($fh, "$empty\n");
           fclose($fh);
       }
       else {
