@@ -1,3 +1,5 @@
+Put these files in the home directory of Raspbian on a Raspberry Pi 3.
+
 Ultrasonic.cpp:
   C++ code to interact with HC-SR04 ultrasonic sensor on Raspberry Pi.
   Outputs distance to object in millimeters.
