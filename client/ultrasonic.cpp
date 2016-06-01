@@ -9,8 +9,14 @@ For Design 3A/Telstra University Challenge, RMIT University
 v0.3
 (sudo nano ./ultrasonic.cpp)
 
+REQUIRES WIRINGPI LIBRARY TO BE INSTALLED
+http://wiringpi.com/download-and-install/
+
 Compile using:
 sudo g++ -Wall -o ultrasonic ultrasonic.cpp -lwiringpi
+
+Run using:
+sudo ./ultraonsic
 
 Interacts with HC-SR04 Ultrasonic sensor using GPIO Pins on RPi
 Sensor has 4 pins: Vcc, ECHO, TRIG, GND
@@ -59,7 +65,7 @@ Based on: https://nineof.wordpress.com/2013/07/16/rpi-hc-sr04-ultrasonic-sensor-
 #include <iostream>
 #include <wiringPi.h>
 
-// define wiringPi Pins
+// define wiringPi Pins (using WiringPi Numbering!)
 // change these depending on pins used
 #define TRIG 5
 #define ECHO 6
