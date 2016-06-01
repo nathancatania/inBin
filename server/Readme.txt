@@ -1,3 +1,5 @@
+Put these files in the /var/www/html folder of an Apache server. PHP must be installed.
+
 post.php:
   Captures data sent by client-side script.
   Data is: device ID, sensor measurment, public IP address, location, authentication key
