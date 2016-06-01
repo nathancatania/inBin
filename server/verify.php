@@ -3,6 +3,8 @@
   // 11/05/2016
 
   // Test retreiving data from sensor file
+  // Not actually used in Live Site
+  // Only used for testing POST data
 
   // Google Maps Static API Key
   $apikey = "AIzaSyA1dIX0t-fcAlQjaivIiO8z2Hai57Lr6cw";
