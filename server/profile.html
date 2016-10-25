@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Nathan's Profile | inBin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/profile.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <style type="text/css">
+      .navbar-brand {
+        padding: 0px; /* firefox bug fix */
+      }
+      .navbar-brand>img {
+        height: 100%;
+        padding: 10px; /* firefox bug fix */
+        width: auto;
+      }
+
+      .navbar-brand>img {
+        max-height: 100%;
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+
+
+        /* probably not needed anymore, but doesn't hurt */
+        -o-object-fit: contain;
+        object-fit: contain;
+      }
+    </style>
+    <style> .carousel-inner > .item > img{ height:100%; } </style>
+
+
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/"><img src="images/navlogo_dark.png" alt="inBin"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome Nathan! <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">My Account</li>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="/landing">Logout <img src="images/lock.png" width="14"> </a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rewards<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Achievements</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">inBin Rewards</li>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">Redeem Points</a></li>
+                    <li><a href="#">Point History</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Team<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Team RMIT</li>
+                    <li><a href="#">Leaderboards</a></li>
+                    <li><a href="#">Team Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Something else?</li>
+                    <li><a href="#">Report a problem</a></li>
+                    <li><a href="/FAQ">FAQ</a></li>
+                    <li><a href="/start">Get Started</a></li>
+                    <li><a href="#">Help</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- CONTENT
+    ==================================================== --->
+
+    <div class="container">
+        <div class="row profile">
+    		<div class="col-md-3">
+    			<div class="profile-sidebar">
+    				<!-- SIDEBAR USERPIC -->
+    				<div class="profile-userpic">
+    					<img src="images/profilepic3.jpg" class="img-responsive" alt="Profile" width="200" height="200">
+    				</div>
+    				<!-- END SIDEBAR USERPIC -->
+    				<!-- SIDEBAR USER TITLE -->
+    				<div class="profile-usertitle">
+    					<div class="profile-usertitle-name">
+    						Nathan Catania
+    					</div>
+    					<div class="profile-usertitle-job">
+    						Computer/Network Eng Student
+    					</div>
+              <div class="profile-usertitle-rank">
+    						Rank 10
+                <br>Green Warrior
+    					</div>
+    				</div>
+    				<!-- END SIDEBAR USER TITLE -->
+    				<!-- SIDEBAR BUTTONS -->
+    				<div class="profile-userbuttons">
+              <table class="table2">
+                <tr>
+                  <td><img src="images/admin.png" style="padding:5px" width="35" height="35"></td>
+                  <td style="text-align:left;padding:5px;font-size:12px;">inBin Developer</td>
+                </tr>
+                <tr>
+                  <td><img src="images/banner.png" style="padding:5px" width="35" height="35"></td>
+                  <td style="text-align:left;padding:5px;font-size:12px;"> 4760 points</td>
+                </tr>
+                <tr>
+                  <td><img src="images/award3.png" style="padding:5px" width="35" height="35"></td>
+                  <td style="text-align:left;padding:5px;font-size:12px;"> 15 Achievements</td>
+                </tr>
+                <tr>
+                  <td><img src="images/team2.png" style="padding:5px" width="32" height="32"></td>
+                  <td style="text-align:left;padding:5px;font-size:12px;"> Team RMIT</td>
+                </tr>
+                <tr>
+                  <td><img src="images/redeem2.png" style="padding:5px" width="32" height="32"></td>
+                  <td style="text-align:left;padding:5px;font-size:12px;"> 8 Rewards Redeemed</td>
+                </tr>
+              </table>
+
+    				</div>
+    				<!-- END SIDEBAR BUTTONS -->
+    				<!-- SIDEBAR MENU -->
+    				<div class="profile-usermenu">
+    					<ul class="nav">
+    						<li class="active">
+    							<a href="#">
+    							<i class="glyphicon glyphicon-home"></i>
+    							Overview </a>
+    						</li>
+    						<li>
+    							<a href="#">
+    							<i class="glyphicon glyphicon-tower"></i>
+    							Achievements </a>
+    						</li>
+    						<li>
+    							<a href="#">
+    							<i class="glyphicon glyphicon-ok"></i>
+    							Activity </a>
+    						</li>
+    					</ul>
+    				</div>
+    				<!-- END MENU -->
+    			</div>
+    		</div>
+    		<div class="col-md-9">
+                <div class="profile-content">
+                    <h2 class="sub-header">Activity</h2>
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                          <img src="images/checkin.png" width="80" height="80">
+                          <br><h6>Scanned In</h6>
+                          06/09/16 [+10pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                          <img src="images/checkin.png" width="80" height="80">
+                          <br><h6>Scanned In</h6>
+                          06/09/16 [+10pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                          <img src="images/checkin.png" width="80" height="80">
+                          <br><h6>Scanned In</h6>
+                          05/09/16 [+10pts]<br>
+                      </div>
+
+                    </div>
+                    <h2 class="sub-header">Achievements<br><small>15/50 Unlocked - <a href="#">See all ></a></small></h2>
+                    <div class="row" style="text-align:center">
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                          <img src="images/achievements/1st.png" width="80" height="80">
+                          <br><h6>King</h6>
+                          1st place on weekly leaderboard
+                          <br>[+70pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/community.png" width="80" height="80">
+                            <br><h6>Socialite</h6>
+                            Participated in a community event
+                            <br>[+250pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/supreme.png" width="80" height="80">
+                            <br><h6>Commander in Chief</h6>
+                            Lead a team of 5+ people
+                            <br>[+15pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/teamtrophy.png" width="80" height="80">
+                            <br><h6>Victory!</h6>
+                            Team placed 1st in monthly leaderboard
+                            <br>[+80pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/badge.png" width="80" height="80">
+                            <br><h6>Power Levelled</h6>
+                            Reached Rank 10
+                            <br>[+30pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/month.png" width="80" height="80">
+                            <br><h6>Perfect Month</h6>
+                            Used inBin 30 days in a row
+                            <br>[+30pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/refmaster.png" width="80" height="80">
+                            <br><h6>Trend Setter</h6>
+                            Refer 5 people to inBin
+                            <br>[+15pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/redeem5.png" width="80" height="80">
+                            <br><h6>Give me free stuff!</h6>
+                            Redeemed 5 rewards
+                            <br>[+5pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/10days.png" width="80" height="80">
+                            <br><h6>Perfect 10</h6>
+                            Used inBin 10 days in a row
+                            <br>[+10pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/team.png" width="80" height="80">
+                            <br><h6>Team Player</h6>
+                            Joined a Team
+                            <br>[+5pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/3days.png" width="80" height="80">
+                            <br><h6>3 in a row!</h6>
+                            Used inBin 3 days in a row
+                            <br>[+5pts]<br>
+                      </div>
+                      <div class="col-xs-6 col-sm-3" style="font-size:10px;padding-bottom:15px;">
+                            <img src="images/achievements/vote.png" width="80" height="80">
+                            <br><h6>Every vote counts</h6>
+                            Voted on the weekly community reward
+                            <br>[+5pts]<br>
+                      </div>
+
+                    </div>
+
+
+
+
+                </div>
+    		</div>
+    	</div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+
+    <!-- FOOTER -->
+    <footer style="padding-left:30px">
+      <p>&copy; 2016 Team inBin - RMIT University &middot; <a href="/privacy">Privacy</a> &middot; <a href="/about">About</a></p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

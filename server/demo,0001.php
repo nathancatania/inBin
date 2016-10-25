@@ -13,7 +13,7 @@
   $apikey = "AIzaSyA1dIX0t-fcAlQjaivIiO8z2Hai57Lr6cw"; // used for Google APIs
 
   // Grab DB file
-  $data = file('sensordata/demo,0001.txt',FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+  $data = file('sensordata/EnGenius,0001.txt',FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
   // Load values
   $deviceid = $data[0];
@@ -40,7 +40,7 @@
     <meta name="author" content="Nathan Catania">
     <link rel="icon" href="">
 
-    <title>demo,0001 | My Sensors | inBin</title>
+    <title>[LIVE] EnGenius,0001 | My Sensors | inBin</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -328,11 +328,11 @@
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header"><?php echo $deviceid; ?></h1>
+          <h1 class="page-header"><?php echo $deviceid; ?> [LIVE DEMO]</h1>
 
           <div class="row">
             <div class="col-sm-4">
-              <img src="https://maps.googleapis.com/maps/api/staticmap?size=250x250&scale=2&markers=color:red%7C-37.918961,145.239983" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?size=250x250&scale=2&markers=color:red%7C-37.809014,144.963751&key=AIzaSyBXp9xKv8mrfKhmgs5ThelK7rscvIKQL0c" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
               <span style="text-align:center" class="text-muted"><b>IP Address: </b> <?php echo ($publicip.'<br>'); ?></span>
             </div>
             <div class="col-sm-6">

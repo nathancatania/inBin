@@ -10,7 +10,7 @@
   Telstra University Challenge 2016
   */
 
-  $apikey = "AIzaSyA1dIX0t-fcAlQjaivIiO8z2Hai57Lr6cw"; // Used for Google APIs
+  $apikey = "AIzaSyBXp9xKv8mrfKhmgs5ThelK7rscvIKQL0c"; // Used for Google APIs
 
   // Load data from db
   $data = file('sensordata/demo,0001.txt',FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -101,7 +101,7 @@
             <li class="active"><a href="overview.php">Overview</a></li>
             <li><a href="details.php">Sensor Details</a></li>
             <li><a href="analytics.php">Analytics</a></li>
-            <li><a href="dashboard.html">Return to Dashboard</a></li>
+            <li><a href="index.html">Logout ></a></li>
             <li><a href="#">Help</a></li>
           </ul>
         </div>
@@ -118,11 +118,12 @@
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Overview</h1>
+          <h1 class="page-header">Welcome Demo User!</h1>
+          <ul><li style="color:red">There are sensors that require your attention.</li></ul><br>
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="https://maps.googleapis.com/maps/api/staticmap?size=200x200&scale=2&markers=size:mid%7Ccolor:red%7C-37.918961,145.239983" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?size=200x200&scale=2&markers=size:mid%7Ccolor:red%7C-37.809014,144.963751&key=AIzaSyBXp9xKv8mrfKhmgs5ThelK7rscvIKQL0c" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>Live Demo</h4>
               <span class="text-muted">1 Online. 0 Offline.</span>
               <?php
@@ -135,19 +136,19 @@
               ?>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="https://maps.googleapis.com/maps/api/staticmap?size=200x200&scale=2&markers=size:mid%7Ccolor:red%7C-36.943727,145.211364%7C-36.873829,145.280640%7C-36.804403,145.467603" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?size=200x200&scale=2&markers=size:mid%7Ccolor:red%7C-36.943727,145.211364%7C-36.873829,145.280640%7C-36.804403,145.467603&key=AIzaSyBXp9xKv8mrfKhmgs5ThelK7rscvIKQL0c" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>M31 Sensors</h4>
               <span class="text-muted">3 Online. 0 Offline.</span>
               <h4><span class="label label-warning">Status: Attention!</span></h4>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="https://maps.googleapis.com/maps/api/staticmap?size=200x200&scale=2&markers=size:mid%7Ccolor:red%7C-38.417307,144.822263%7C-38.414844,144.817757" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?size=200x200&scale=2&markers=size:mid%7Ccolor:red%7C-38.417307,144.822263%7C-38.414844,144.817757&key=AIzaSyBXp9xKv8mrfKhmgs5ThelK7rscvIKQL0c" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>Beach Sensors</h4>
               <span class="text-muted">2 Online. 0 Offline.</span>
               <h4><span class="label label-success">Status: OK</span></h4>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="https://maps.googleapis.com/maps/api/staticmap?size=200x200&scale=2&markers=size:mid%7Ccolor:red%7C-37.809379,144.963595%7C-37.817699,144.967273%7C-37.811410,144.964774%7C-37.809709,144.963955%7C-37.810421,144.961562%7C-37.809929,144.969780%7C-37.813404,144.965724%7C-37.814591,144.966046%7C-37.815354,144.966572%7C-37.813303,144.962860%7C-37.817788,144.967925%7C" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <img src="https://maps.googleapis.com/maps/api/staticmap?size=200x200&scale=2&markers=size:mid%7Ccolor:red%7C-37.809379,144.963595%7C-37.817699,144.967273%7C-37.811410,144.964774%7C-37.809709,144.963955%7C-37.810421,144.961562%7C-37.809929,144.969780%7C-37.813404,144.965724%7C-37.814591,144.966046%7C-37.815354,144.966572%7C-37.813303,144.962860%7C-37.817788,144.967925%7C&key=AIzaSyBXp9xKv8mrfKhmgs5ThelK7rscvIKQL0c" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
               <h4>CBD Sensors</h4>
               <span class="text-muted">8 Online. 3 Offline.</span>
               <h4><span class="label label-danger">Status: Alert!</span></h4>

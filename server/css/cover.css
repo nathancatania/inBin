@@ -28,7 +28,7 @@ html,
 body {
   height: 100%;
   background-color: #333;
-  background: url(../images/coverBG.jpg) no-repeat center fixed;
+  background: url(../images/coverBG3.jpg) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -37,7 +37,7 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 10px rgba(0,0,0,1);
+  text-shadow: 0 1px 5px rgba(0,0,0,1);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */

@@ -19,7 +19,7 @@
     x[4] == longitude co-ordinate of sensor (hardcoded on sensor)
   */
 
-  $data = file('sensordata/demo,0001.txt',FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+  $data = file('sensordata/EnGenius,0001.txt',FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
   $deviceid = $data[0];
   $distance = $data[1];
