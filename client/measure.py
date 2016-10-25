@@ -5,8 +5,8 @@
 # For Team inBin. Telstra University Challenge 2016
 # s3477902@student.rmit.edu.au, RMIT University
 
-# v0.8
-# Last updated: 17/05/16
+# v0.8.1
+# Last updated: 09/10/16
 # Changelog is at bottom of file.
 
 import RPi.GPIO as GPIO
@@ -17,7 +17,7 @@ from subprocess import check_output
 #### Bin DEPTH ####
 # [LARGE] 240 L Capacity
 # Define DEPTH in mm (millimeters):
-capacity = 950.0
+capacity = 665.0
 
 #### Trigger Level ####
 # Fill level of bin that triggers need to empty
@@ -30,7 +30,7 @@ limit = 0.75
 # then sent data will be discarded.
 # This is a quick/dirty way to prevent unauthorised POST data
 key = "xNdp9LbK9PSUTYRFDWk2Jr"
-deviceID = "demo,0001"
+deviceID = "EnGenius,0001"
 
 #### Bin Co-Ordinates ####
 # Used for Google Maps API
@@ -112,7 +112,7 @@ print empty
 # to getIP, just use 'origin' key.
 payload = {'distance':distance, 'fill':fill, 'capacity':capacity, 'empty':empty, 'publicip':getPublicIP(), 'latitude':latitude, 'longitude':longitude, 'key':key, 'deviceID':deviceID}
 #r = requests.post("http://58.162.145.29/process.php", data=payload)
-r = requests.post("http://58.162.145.29/post.php", data=payload)
+r = requests.post("https://inbin.tech/post.php", data=payload)
 print "Data Sent!"
 print(r.text)
 
@@ -122,3 +122,8 @@ print(r.text)
 
 # v0.8 - [17/05/16] -   Updated Location co-ordinates to reflect demo location (ROWVILLE, VIC)
 #                   -   Added calculations for bin fill level + capacity + whether it requires emptying.
+
+# v0.8 - [09/10/16] -   Updated Location co-ordinates to reflect demo location (EnGenius Tradefair)
+#                   -   Updated server IP address to point to new inBin server.
+#                   -   Changed bin capacity to match new prototype 80L bin.
+#                   -   Changed deviceID to EnGenius_demo,0001 from demo,0001
